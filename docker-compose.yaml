@@ -19,9 +19,7 @@ services:
     networks:
       - myshop-network
   myshop-app:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: codingnoob12/myshop:latest
     container_name: myshop-app
     ports:
       - "8080:8080"
